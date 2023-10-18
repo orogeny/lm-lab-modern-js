@@ -2,8 +2,13 @@
 
 // Add rest parameters here!
 export function add(a, b) {
-  // Add a loop here
-  return a + b;
+
+  let total = 0;
+
+  for (const arg of arguments) {
+    total += arg;
+  }
+  return total;
 }
 
 add(1, 2, 3, 4, 5);
